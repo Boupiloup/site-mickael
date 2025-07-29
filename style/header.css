@@ -1,0 +1,188 @@
+header {
+    display: flex;
+    /* Met les éléments du header en ligne */
+    justify-content: space-between;
+    /* Espace égal entre les éléments */
+    align-items: center;
+    /* Aligne verticalement au centre */
+    max-width: 1420px;
+    /* Limite la largeur max */
+    margin: 0 auto;
+    /* Centre horizontalement dans la page */
+    position: relative;
+    /* Permet de positionner des éléments enfants en absolu si besoin */
+}
+
+.menu-header {
+    display: flex;
+    /* Affiche les liens en ligne */
+    flex-wrap: wrap;
+    /* Passe à la ligne si trop large */
+    gap: 29px;
+    /* Espace entre les éléments */
+}
+
+.logo {
+    height: 250px;
+    /* Hauteur fixe du logo */
+    width: 220px;
+    /* Largeur fixe du logo */
+
+}
+
+.item-menu a {
+    padding: 10px 15px;
+    /* Espacement interne */
+    border-radius: 50px;
+    /* Coins arrondis type “pilule” */
+    margin-right: 10px;
+    /* Espace à droite entre les liens */
+    font-size: 1rem;
+    /* Taille du texte */
+    box-shadow: 4px 3px 11px rgb(0, 0, 0);
+    background: linear-gradient(to bottom, #707070 0px, #000000 45px);
+    /* Dégradé vertical */
+
+}
+
+.button-phone {
+    display: none;
+    /* Caché par défaut (affiché en mobile) */
+}
+
+.menu-phone {
+    display: none;
+    /* Idem, caché en desktop */
+}
+
+
+@media screen and (max-width: 768px) {
+    .overlay {
+        position: fixed;
+        /* Collé à la fenêtre, même en scrollant */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Noir semi-transparent */
+        opacity: 0;
+        /* Invisible par défaut */
+        height: 100vh;
+        /* 100% de la hauteur écran */
+        width: 100vw;
+        /* 100% de la largeur écran */
+        z-index: 998;
+        /* Juste en dessous du menu mobile */
+        backdrop-filter: blur(5px);
+        /* Floute le fond */
+        top: 0;
+        left: 0;
+        /* Collé en haut à gauche */
+        pointer-events: none;
+        /* Ne capte pas les clics tant qu’invisible */
+    }
+
+    .overlay.active {
+        opacity: 1;
+        /* Rend visible */
+        pointer-events: auto;
+        /* Capte les clics */
+    }
+
+    header {
+        flex-direction: column;
+        /* Les éléments du header sont empilés */
+        align-items: center;
+        /* Centrage horizontal */
+    }
+
+    .menu-header {
+        display: none;
+        /* Cache le menu horizontal desktop */
+    }
+
+    .button-phone {
+        display: block;
+        /* Affiche le burger */
+        background: none;
+        /* Pas de fond */
+        border: none;
+        /* Pas de bordure */
+        font-size: 2.5rem;
+        /* Taille de l’icône burger */
+        color: #DE9A2A;
+        /* Couleur orange foncé */
+        cursor: pointer;
+        /* Main au survol */
+        position: fixed;
+        /* Fixé à l’écran */
+        top: 20px;
+        left: 20px;
+        /* Coin haut gauche */
+        transition: transform 0.2s;
+        /* Petite animation au clic */
+        touch-action: manipulation;
+        /* Optimisation tactile */
+                z-index: 9999;
+
+    }
+
+    .button-phone:active {
+        transform: scale(1.2);
+        /* Agrandit un peu au clic */
+    }
+
+    .menu-phone {
+        position: fixed;
+        /* Fixé à l’écran */
+        top: 0;
+        left: 0;
+        /* Placé en haut à gauche */
+        height: 100vh;
+        /* Pleine hauteur */
+        width: 70vw;
+        /* 70% de la largeur écran */
+        max-width: 360px;
+        /* Largeur maximale */
+        background: linear-gradient(to bottom, #666666 0%, #1f1f1f 50%, #111111 100%);
+        /* Dégradé sombre */
+        z-index: 999;
+        /* Au-dessus du fond flou */
+        display: flex;
+        /* Colonne verticale */
+        flex-direction: column;
+        transform: translate(-100%);
+        /* Décalé à gauche (invisible) */
+        transition: transform 0.3s ease;
+        /* Animation d’ouverture */
+    }
+
+    .menu-phone.active {
+        transform: translate(0);
+        /* Fait coulisser le menu à sa place */
+    }
+
+    .menu-phone ul {
+        display: flex;
+        flex-direction: column;
+        /* Empile les liens verticalement */
+        gap: 20px;
+        /* Espace entre les liens */
+        padding: 20px;
+        /* Marge intérieure */
+    }
+
+    .item-menu {
+        display: flex;
+        justify-content: center;
+        /* Centre horizontalement */
+        width: 100%;
+        max-width: 300px;
+        /* Largeur max */
+        margin: 0 auto;
+        /* Centré */
+    }
+
+    a {
+        color: #ffb71c;
+        /* Jaune orangé */
+    }
+
+}

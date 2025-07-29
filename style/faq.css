@@ -1,0 +1,16 @@
+.text-padding-faq {
+  font-family: 'Playfair Display', serif;
+  padding: 10px 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.titre-faq {
+  font-family: 'Cinzel', serif;
+  color: #DE9A2A;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}

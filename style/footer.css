@@ -1,0 +1,40 @@
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: auto; /* ← Ajout important pour footer sticky */
+}
+
+.icon-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px 0px;
+  list-style: none;
+}
+
+.icon-socials img {
+  width: 55px;
+  height: 55px;
+}
+
+.infos-footer {
+  padding: 10px;
+  text-align: left;
+  margin-left: 20px;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.mentions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  list-style: none;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+.titre-copyright {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}

@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #000000 0%, #666666 20%, #000000 50%, #000000 90%, #666666 100%);
+  color: #ffffff;
+  font-family: 'Cinzel', serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Cinzel', serif;
+  color: #DE9A2A
+}
+
+p {
+  font-family: 'Cinzel', serif;
+}
+
+a {
+  font-family: 'Playfair Display', serif;
+  color: #ff9d00;
+}
+
+.titre-footer {
+  color: #ff9d00;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Conteneur principal centré, sans forcer l'alignement du texte */
+/* Conteneur global centré */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Titres principaux */
+.titre-2,
+.titre-padding {
+  font-family: 'Cinzel', serif;
+  color: #DE9A2A;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+/* Paragraphes centrés */
+.text-padding {
+  font-family: 'Playfair Display', serif;
+  padding: 10px 10px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+/* Blocs UL bien centrés */
+.ul-listStyle {
+  font-family: 'Playfair Display', serif;
+  list-style: disc inside;
+  display: inline-block;
+  text-align: left;
+  margin: 0 auto 30px auto;
+  padding-left: 0;
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}

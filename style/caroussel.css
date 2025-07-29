@@ -1,0 +1,126 @@
+.carousel-wrapper {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    margin: 0 60px; /* marge extérieure égale à gauche et à droite */
+}
+
+
+.carousel-item:last-child {
+    margin-right: 60px;  /* équilibre visuel à droite */
+}
+
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 250px;
+    scroll-snap-align: start;
+}
+
+.carousel-track img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: rgba(39, 39, 39, 0.747);
+    color: #ffaa21;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.carousel-btn.left {
+    left: 70px;
+}
+
+.carousel-btn.right {
+    right: 70px;
+}
+
+/* 📱 Mobile : 1 image */
+@media (max-width: 576px) {
+    .carousel-track-container {
+        padding: 0;
+    }
+
+    .carousel-track {
+        padding: 0 20px;
+    }
+
+    .carousel-track img {
+        height: 400px;
+        border-radius: 20%;
+    }
+
+    .carousel-item {
+        max-width: 100%;
+    }
+}
+
+/* 📱 Tablette : 2 images visibles */
+@media (min-width: 577px) and (max-width: 991px) {
+    .carousel-track {
+        padding: 0 40px;
+    }
+
+    .carousel-item {
+        max-width: 45%;
+    }
+
+    .carousel-track img {
+        border-radius: 20%;
+    }
+}
+
+/* 💻 PC moyen : 3 images visibles */
+@media (min-width: 992px) and (max-width: 1399px) {
+    .carousel-track {
+        padding: 0 50px;
+    }
+
+    .carousel-item {
+        max-width: 30%;
+    }
+
+    .carousel-track img {
+        height: 350px;
+    }
+}
+
+/* 🖥️ Grand écran : 4 images visibles */
+@media (min-width: 1400px) {
+    .carousel-track {
+        padding: 0 60px;
+    }
+
+    .carousel-item {
+        max-width: 25%;
+    }
+}

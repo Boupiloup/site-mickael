@@ -1,0 +1,76 @@
+.formulaire-tatouage {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    background-color: #222;
+    border-radius: 10px;
+    color: #DE9A2A;
+    font-weight: 600;
+    gap: 5px;
+}
+
+select,
+option {
+  font-size: 15px; 
+}
+
+
+input,
+select,
+textarea {
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+input,
+select,
+textarea {
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+label {
+    font-family: 'Cinzel', serif;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #DE9A2A;
+  color: black;
+  font-family: 'Cinzel', serif;
+  padding: 12px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 300px;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffcc66;
+}
+
+label {
+  font-family: 'Cinzel', serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (max-width: 610px) {
+  .formulaire-tatouage {
+    margin: 20px;
+  }
+
+  button[type="submit"] {
+  width: 80%;
+  padding: 12px 20px;
+}
+}
