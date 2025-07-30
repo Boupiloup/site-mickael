@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/header.css?v=3">
     <link rel="stylesheet" href="style/main.css?v=3">
     <link rel="stylesheet" href="style/footer.css?v=6">
-    <link rel="stylesheet" href="style/formulaire.css?v=3">
+    <link rel="stylesheet" href="style/formulaire.css?v=4">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,7 +23,7 @@
 <body>
 
     
-
+  <?php include 'include/header.php'; ?>
     <main>
         <form action="#" method="GET" class="formulaire-tatouage container">
 
@@ -75,10 +75,14 @@
             <label for="tattoo-non">Non</label><br><br>
 
             <button type="submit">Préparer le message WhatsApp</button>
-
         </form>
+
+        <a class="text-ps">PS : Une fois que vous avez appuyé sur le bouton,<br>
+  le message est automatiquement copié. <br>
+  Si jamais vous rencontrez le moindre bug, n'hésitez pas à me le signaler via whatsapp ou mes réseaux sociaux. </a>
     </main>
 
+  <?php include 'include/footer.php'; ?>
 
 
     <script src="js/formulaire.js"></script>
