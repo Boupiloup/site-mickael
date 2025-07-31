@@ -20,7 +20,7 @@
     href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
     rel="stylesheet">
 
-  <title>Prendre rendez-vous</title>
+  <title>Tarification</title>
 </head>
 <?php include 'include/header.php'; ?>
 

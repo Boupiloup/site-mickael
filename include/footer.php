@@ -27,10 +27,7 @@
     <div class="infos-footer">
       <p class="titre-footer">Informations légales</p>
       <ul class="mentions">
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        <li><a href="politique-confidentialite.html">Politique de confidentialité</a></li>
+        <a href="/site-mickael/mentions-legales.php">Mentions légales</a>
       </ul>
-    </div>
 
-  </div> <!-- fin .footer-container -->
 </footer>

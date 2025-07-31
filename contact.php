@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css?v=4">
   <link rel="stylesheet" href="style/style.css?v=9">
   <link rel="stylesheet" href="style/header.css?v=3">
-  <link rel="stylesheet" href="style/main.css?v=3">
   <link rel="stylesheet" href="style/footer.css?v=6">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
