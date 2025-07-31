@@ -5,17 +5,17 @@
     <ul class="icon-socials">
       <li>
         <a href="https://wa.me/+33631101731">
-          <img src="logo/icon/whatsapp.png" alt="WhatsApp">
+          <img src="/site-mickael/logo/icon/whatsapp.png" alt="WhatsApp">
         </a>
       </li>
       <li>
         <a href="https://www.instagram.com/tatouage_mika?igsh=cWhqbnM0bXVtdDdo">
-          <img src="logo/icon/instagram.png" alt="Instagram">
+          <img src="/site-mickael/logo/icon/instagram.png" alt="Instagram">
         </a>
       </li>
       <li>
         <a href="mailto:Mikel2158146@gmail.com">
-          <img src="logo/icon/gmail.png" alt="Gmail">
+          <img src="/site-mickael/logo/icon/gmail.png" alt="Gmail">
         </a>
       </li>
     </ul>
@@ -27,7 +27,10 @@
     <div class="infos-footer">
       <p class="titre-footer">Informations légales</p>
       <ul class="mentions">
-        <a href="/site-mickael/mentions-legales.php">Mentions légales</a>
+        <li><a href="/site-mickael/mentions-legales.php">Mentions légales</a></li>
+        <li><a href="/site-mickael/admin/login.php">Connexion</a></li>
       </ul>
+    </div>
 
+  </div>
 </footer>

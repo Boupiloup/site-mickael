@@ -2,7 +2,8 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  margin-top: auto; /* ← Ajout important pour footer sticky */
+  margin-top: auto;
+  /* ← Ajout important pour footer sticky */
 }
 
 .icon-socials {
@@ -30,8 +31,16 @@
   flex-direction: column;
   gap: 10px;
   padding: 10px;
-  list-style: none;
+  max-width: 200px;
+  /* ← ou ce que tu veux */
   text-shadow: 2px 2px 4px rgb(0, 0, 0);
+
+}
+
+
+.mentions a {
+  display: inline-block;
+  width: auto;
 }
 
 .titre-copyright {
