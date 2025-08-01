@@ -1,0 +1,63 @@
+.card-admin {
+    background-color: rgb(34, 34, 34);    /* fond gris foncé */
+    border-radius: 10px;                  /* coins arrondis */
+    margin: 10px;                         /* espace autour de chaque carte */
+    padding: 15px;                        /* espace intérieur */
+    box-shadow: 1px 1px 5px rgb(255, 153, 0); /* petite ombre orange */
+    transition: all 0.3s ease;            /* animation douce sur hover */
+}
+
+.card-admin:hover {
+    transform: scale(1.03);              /* zoom léger au survol */
+    box-shadow: 0 0 25px rgb(236, 87, 0); /* ombre plus forte en hover */
+}
+
+.dashboard-grid {
+    display: grid;                        /* active le système de grille */
+
+    /* Grille responsive auto :
+    - auto-fit = adapte le nombre de colonnes à l’écran
+    - minmax = chaque colonne fait min 280px, max 1 part de l’espace
+    - Pas besoin de media queries */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;                            /* espace entre les cartes */
+}
+
+.card-admin p {
+    font-size: 1rem;                      /* taille du texte normale */
+    color: #dadada;                          /* gris clair lisible */
+    text-align: center;                  /* centre le texte */
+    margin: 10px 0 12px;                 /* espace haut/bas, rien sur les côtés */
+    line-height: 1.9;                     /* espace entre les lignes de texte */
+}
+
+.btn-admin {
+    color: rgb(0, 0, 0);                  /* texte noir */
+    background-color: #ffaa21;           /* fond orange */
+    display: flex;                        /* organisation verticale */
+    flex-direction: column;              /* empile les enfants verticalement */
+    justify-content: space-between;      /* espace entre les éléments */
+    border-radius: 20px;                 /* boutons bien arrondis */
+    width: fit-content;                  /* bouton s’adapte au texte */
+    margin: 0 auto;                      /* bouton centré horizontalement */
+    padding: 8px 15px 8px 15px;           /* espace interne autour du texte */
+    cursor: pointer;                     /* curseur "main" au survol */
+}
+
+.btn-logout {
+    background-color: #f09205e8;         /* fond rouge/orange */
+    color: #fff;                          /* texte blanc */
+    border: none;                         /* pas de contour */
+    border-radius: 8px;                   /* coins arrondis */
+    padding: 10px 20px;                   /* espace interne */
+    font-weight: bold;                   /* texte en gras */
+    cursor: pointer;                     /* curseur "main" */
+    margin: 30px auto;                   /* centré + espacé du haut */
+    display: block;                      /* occupe toute la ligne */
+    transition: all 0.5s ease;    /* animation fond au survol */
+}
+
+.btn-logout:hover {
+    background-color: #c91602;           /* fond rouge plus vif */
+    box-shadow: 0 0 12px rgba(255, 60, 0, 0.5); /* effet glow orange au hover */
+}
